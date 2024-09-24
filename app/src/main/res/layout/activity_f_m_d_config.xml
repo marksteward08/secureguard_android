@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.settings.FMDConfigActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_normal"
+        android:orientation="vertical"
+        android:paddingTop="8dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            app:cardBackgroundColor="#ecf0f1"
+            app:cardCornerRadius="@dimen/border_radius"
+            app:contentPadding="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="@string/Trusted_Number"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/title_size"
+                    android:textStyle="bold"
+                    tools:text="@string/Trusted_Number" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:fontFamily="@font/poppins"
+                    android:text="@string/Settings_FMDCommand_Description" />
+
+                <EditText
+                    android:id="@+id/fieldSetNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:ems="10"
+                    android:fontFamily="@font/poppins"
+                    android:hint="09XXXXXXXXX" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            app:cardBackgroundColor="#ecf0f1"
+            app:cardCornerRadius="@dimen/border_radius"
+            app:contentPadding="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="SecureGuard via PIN"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/title_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:fontFamily="@font/poppins"
+                    android:text="@string/Settings_FMD_via_Pin_Description" />
+
+                <CheckBox
+                    android:id="@+id/checkBoxFMDviaPin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Enable" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="@string/pin"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/title_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:fontFamily="@font/poppins"
+                    android:text="@string/Settings_Pin_Description" />
+
+                <Button
+                    android:id="@+id/buttonEnterPin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:height="@dimen/button_height"
+                    android:fontFamily="@font/poppins"
+                    android:text="@string/Settings_Enter_Pin"
+                    android:textAllCaps="false"
+                    app:cornerRadius="@dimen/border_radius" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            app:cardBackgroundColor="#ecf0f1"
+            app:cardCornerRadius="@dimen/border_radius"
+            app:contentPadding="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Command Prefix"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/title_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:fontFamily="@font/poppins"
+                    android:text="@string/Settings_FMDCommand_Description" />
+
+                <EditText
+                    android:id="@+id/editTextFmdCommand"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:ems="10"
+                    android:fontFamily="@font/poppins"
+                    android:text="/sg" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            app:cardBackgroundColor="#ecf0f1"
+            app:cardCornerRadius="@dimen/border_radius"
+            app:contentPadding="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Ringtone"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/title_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:fontFamily="@font/poppins"
+                    android:text="@string/Settings_Ringer_Tone_Description" />
+
+                <Button
+                    android:id="@+id/buttonSelectRingTone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:height="@dimen/button_height"
+                    android:fontFamily="@font/poppins"
+                    android:text="@string/Settings_Select_Ringtone"
+                    android:textAllCaps="false"
+                    app:cornerRadius="@dimen/border_radius" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            app:cardBackgroundColor="#ecf0f1"
+            app:cardCornerRadius="@dimen/border_radius"
+            app:contentPadding="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Lock Message"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/title_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:fontFamily="@font/poppins"
+                    android:text="@string/Settings_Lockscreenmessage_Description" />
+
+                <EditText
+                    android:id="@+id/editTextTextLockScreenMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:ems="10"
+                    android:fontFamily="@font/poppins"
+                    android:text="Your message here." />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="40dp"
+            app:cardBackgroundColor="#ecf0f1"
+            app:cardCornerRadius="@dimen/border_radius"
+            app:contentPadding="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Wipe Data through Command"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/title_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:fontFamily="@font/poppins"
+                    android:text="This will allow you to factory reset your phone via SecureGuard's command (Be careful!)" />
+
+                <CheckBox
+                    android:id="@+id/checkBoxWipeData"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:text="@string/Enable" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>
+

@@ -1,0 +1,226 @@
+<resources>
+    <string name="app_name" translatable="false">SecureGuard</string>
+
+    <!-- Generic -->
+    <string name="Ok" translatable="false">@android:string/ok</string>
+    <string name="loading">Loading…</string>
+    <string name="help">Help</string>
+    <string name="copied">Copied</string>
+    <string name="paste" translatable="false">@android:string/paste</string>
+    <string name="accept">accept</string>
+    <string name="cancel" translatable="false">@android:string/cancel</string>
+    <string name="Edit">Edit</string>
+    <string name="Add_Whitelist">Set</string>
+    <string name="GPS">GPS</string>
+    <string name="Cell">Cell</string>
+
+    <!-- ADDED -->
+    <string name="Listening">Listening to commands</string>
+    <string name="AddConfig">Additional Config</string>
+    <string name="Device_Protected">Your Device is Protected</string>
+    <string name="Activate_Server">Fetch Server</string>
+    <string name="Trusted_Number">Trusted Number</string>
+    <string name="Active_hint">If the login and signup button is disabled, it means the web panel is inactive. If so, just tap the \"Fetch Server\" button</string>
+
+    <!-- MainActivity -->
+    <string name="Granted">Granted: </string>
+    <string name="Info_CORE" translatable="false">CORE</string>
+    <string name="Info_GPS" translatable="false">GPS</string>
+    <string name="Info_DND" translatable="false">DND</string>
+    <string name="Info_DEVICE_ADMIN" translatable="false">DeviceAdmin</string>
+    <string name="Info_Overlay" translatable="false">Overlay</string>
+    <string name="Info_SecureSettings" translatable="false">SecureSettings</string>
+    <string name="Info_Notification_Access">Notification Access</string>
+    <string name="Info_Camera" translatable="false">Camera</string>
+    <string name="Info_FMD_Command">Prefix:</string>
+    <string name="Info_Server_Enabled">Web Panel</string>
+    <string name="Info_Server_Registered">Registered:</string>
+    <string name="Info_Server_Push">Push:</string>
+
+    <!-- Settings (main screen, with the list) -->
+    <string name="Settings_Settings">Settings</string>
+    <string name="Settings_FMDConfig">SecureGuard-Config</string>
+    <string name="Settings_FMDServer" translatable="false">SecureGuard Server</string>
+    <string name="Settings_WhiteList">Trusted Contacts</string>
+    <string name="Settings_OpenCellId">OpenCelliD</string>
+    <string name="Settings_Permissions">Review Permissions</string>
+    <string name="Settings_Import">Import Settings</string>
+    <string name="Settings_Export">Export Settings</string>
+    <string name="Settings_Logs">Logs</string>
+    <string name="Settings_About">About</string>
+
+    <!-- Settings: General -->
+    <string name="Settings_FMD_via_Pin_Description">Allows you to communicate with SecureGuard via a pin. You will be added to a temporary allowlist.</string>
+    <string name="Settings_Pin_Description">Used as confirmation before wiping the device or for temporary usage of the service.</string>
+    <string name="Settings_Enter_Pin">Enter Pin</string>
+    <string name="pin">Enter your PIN</string>
+    <string name="pin_repeat">Repeat PIN</string>
+    <string name="Settings_FMDCommand_Description">The command used to communicate with the SecureGuard application.</string>
+    <string name="Settings_Ringer_Tone_Description">Select a ringtone that will be played when "/sg ring" is sent.</string>
+    <string name="Settings_Select_Ringtone">Select Ringtone</string>
+    <string name="Settings_Lockscreenmessage_Description">Lock Screen Message:\nWhen locking the device, this message will appear on the lock screen.</string>
+
+    <!-- Settings: FMD Server -->
+    <string name="Settings_FMD_Server_General">Server Info</string>
+    <string name="Settings_FMD_Server_Server_URL">Server URL:</string>
+    <string name="Settings_FMD_Server_User_ID">User ID:</string>
+    <string name="Settings_FMD_Server_ID_Desc">You need the user ID to find your device with SecureGuard Server. Write it down and keep it safe.</string>
+    <string name="Settings_FMDServer_Change_Password_Button">Change Password</string>
+    <string name="Settings_FMDServer_Logout_Button">Log out</string>
+    <string name="Settings_FMDServer_Delete_Button">Delete Data</string>
+    <string name="Settings_FMDServer_Alert_DeleteData">Delete Data</string>
+    <string name="Settings_FMDServer_Alert_DeleteData_Desc">This will delete all data from the Server! Are you sure?</string>
+    <string name="Settings_FMDServer_Push_Description_Missing">Sending commands from SecureGuard Server to your phone requires a UnifiedPush distributor app. Install one, and then return here. It will automatically be detected.</string>
+    <string name="Settings_FMDServer_Push_Description_Available">Successfully registered for push notifications.</string>
+    <string name="Settings_FMDServer_Push_Open_UP">Open UnifiedPush Website</string>
+    <string name="Settings_FMDServer_Update_Interval_Title">Update Interval</string>
+    <string name="Settings_FMDServer_Update_Interval_Description">SecureGuard uploads the device\'s location every X minutes.</string>
+    <string name="Settings_FMDServer_Location_Type_Title">Location Source</string>
+    <string name="Settings_FMDServer_Location_Type_Description">If none is selected, no locations are uploaded regularly. (You can still use the web interface to force an upload. This requires push.)</string>
+    <string name="Settings_FMDServer_LOW_BAT_Upload_Title">Upload on Low Battery</string>
+    <string name="Settings_FMDServer_LOW_BAT_Upload_Description">Upload the location of this device when the battery level goes low. This requires Notification Access.</string>
+    <string name="password_old">Old Password</string>
+    <string name="password_new">New Password</string>
+    <string name="password_new_repeat">Repeat New Password</string>
+
+    <!-- SecureGuard Server Registration/Login -->
+    <string name="server_version">Server version</string>
+    <string name="server_version_error">Error getting server version</string>
+    <string name="server_version_error_low_version">At least server version {MIN} is required, but the selected server has version {CURRENT}. Continue at your own risk.</string>
+    <string name="Settings_FMDServer_AddAccount">SecureGuard Server: Login/Register</string>
+    <string name="Settings_FMDServer_Info">Using SecureGuard Server allows you to send commands over the internet from the server to the app. You can track the device location on a map and view pictures taken by the device.</string>
+    <string name="Settings_FMDServer_open_website">Open SecureGuard Server Website</string>
+    <string name="Settings_FMDServer_use_default_server">Use Secureguard\'s server</string>
+    <string name="Settings_FMDServer_Login">Login</string>
+    <string name="Settings_FMDServer_Register">Register</string>
+    <string name="Settings_FMDServer_Alert_PrivacyPolicy_Title">Privacy Policy</string>
+    <string name="password">Password</string>
+    <string name="password_repeat">Repeat Password</string>
+    <string name="registration_token">Registration Token</string>
+    <string name="registration_token_hint">Private instances may require a secret token. Leave this empty if the instance is public.</string>
+
+    <!-- Settings: Allowed Contacts -->
+    <string name="Whitelist_help">The contacts in this list are allowed to send SecureGuard commands via SMS. Commands from everyone else will be ignored.</string>
+    <string name="Whitelist_empty">No allowed contacts. Click the button to your contacts!</string>
+    <string name="WhiteList_Add_Contact">Add</string>
+    <string name="WhiteList_Select_Action">Select an action:</string>
+    <string name="WhiteList_Select_Number">Select one of the phone numbers.</string>
+    <string name="Alert_First_Time_contact_added">Congratulations. You have added your first contact. You can now communicate with SecureGuard by sending a SMS message that contains \"sg\" from the allowed phone number. When everything works, the application will respond.</string>
+
+    <!-- Settings: OpenCelliD -->
+    <string name="OpenCellId_OpenCellId" translatable="false">OpenCelliD</string>
+    <string name="OpenCellId_API_Key_Description" translatable="false">API Access Token:</string>
+    <string name="OpenCellId_help">FMD can use the OpenCelliD service to get an approximate location based on the cell tower that the phone is connected to. An internet connection is required for every location query. You also need to create an account at OpenCelliD and get your own API Access Token.</string>
+    <string name="OpenCellId_privacy">Privacy: keep in mind that OpenCelliD learns your current cell tower and thus your location with every API query.</string>
+    <string name="OpenCellId_open_website">Open OpenCelliD website</string>
+    <string name="OpenCellId_test_opencellid">Test OpenCelliD Connection</string>
+    <string name="OpenCellId_test_no_connection">No cell connection</string>
+
+    <!-- Settings: Import/Export -->
+    <string name="settings_exported">Settings exported</string>
+
+    <!-- Settings: Logs -->
+
+    <!-- Settings: About -->
+    <string name="about">About</string>
+    <string name="about_source_code">Source Code</string>
+    <string name="about_wiki">Wiki</string>
+    <string name="app_description">SecureGuard allows you to remotely locate your device. You can communicate with SecureGuard over SMS, instant messengers, or using SecureGuard Server. Locate your device, make it ring, lock it, or wipe it - all from remote.</string>
+
+    <!-- Crypto Update Boarding -->
+    <string name="notify_crypto_update_title">Action required</string>
+    <string name="notify_crypto_update_text">You need to update some settings to continue using SecureGuard. Click to open.</string>
+    <string name="server_unregister_failed_title">Unregistering failed</string>
+    <string name="server_unregister_failed_body">Unregistering failed with the following error: {ERROR}\n\nYou can continue anyway, but your account might not have been deleted from the server. If you continue, your account will be deleted locally from this device.</string>
+    <string name="server_unregister_continue_anyway">Continue anyway</string>
+    <string name="server_unregister_dont_continue">Don\'t continue</string>
+
+    <!-- Permissions -->
+
+    <!-- Notification Channels -->
+    <string name="Notification_Usage">Usage</string>
+    <string name="Notification_Usage_Description">Notification about the service usage.</string>
+    <string name="Notification_Lifecycle">Lifecycle</string>
+    <string name="Notification_Lifecycle_Description">Notification about the Lifecycle of the Service.</string>
+    <string name="Pin_Usage">PinUsage</string>
+    <string name="Notification_Pin_Usage_Description">Notification about the pin usage.</string>
+    <string name="Notification_Server">Server</string>
+    <string name="NotificationServer_Description">Display notifications sent from the server.</string>
+    <string name="Notification_Security">Security</string>
+    <string name="Notification_Security_Description">Notifications about security updates</string>
+    <string name="Notification_FAIL">Fail</string>
+    <string name="Notification_Fail_Description">Notification when something fails, like the connection to SecureGuard server.</string>
+
+    <!-- Varia -->
+
+    <!-- Not yet sorted -->
+    <string name="Permission_IGNORE_BATTERY_OPTIMIZATION">This application is supposed to work in the background. To ensure it works even when your phone is in standby, you need to turn off battery optimization for this app.</string>
+    <string name="Info_BatteryOptimization" translatable="false">OptimizeBattery</string>
+
+    <string name="Introduction_Introduction">SecureGuard is an application that can help you find your phone when it gets lost.\n\nIt uses SMS (texting) to communicate and send commands from a second device so you can track your phone.Just send a SMS message that contains the "/sg" command.\n\nPlease note that this application is experimental.\n\n - Mark</string>
+    <string name="Introduction_UpdatePermission">Some new permissions are needed.\nPlease check the following permissions in order to continue using this application, or change back to an older version.</string>
+    <string name="Permission_SMS">In order to command the phone to do something, this application needs to be able to see your SMS messages.\n\nYour messages never leave your phone, and they are never used for anything except finding your phone.\n\nThis Permission is needed.</string>
+    <string name="Permission_CONTACTS">Not everybody is allowed to send commands to your phone, so you need to select some contacts who will be able to locate your device.\n\nThis permission is needed.</string>
+    <string name="Permission_GPS">If you want to get the GPS coordinates from your phone, the application needs this permission.\n\nPlease also allow the application to locate your phone in the background.\n\nIf you don\'t give this permission, this functionality will not be activated.</string>
+    <string name="Permission_DND">You can make your phone ring to help you locate it. When \"Do Not Disturb\" is active, it may be possible that the phone is muted.\n\nIf you don\'t give this permission, this functionality will not be activated.</string>
+    <string name="Permission_DEVICE_ADMIN">If you want to lock or wipe your phone if it gets lost, this permission is needed.\n\nIf you don\'t give this permission, this functionality will not be activated.</string>
+    <string name="Permission_WRITE_SECURE_SETTINGS">This application is capable of turning on location if you normally leave location off.\n\nIf it is off, \"/sg locate\" will not work.\n\nIn order to achieve this, the application needs a special permission that you have to grant using a computer.\n\nThis permission is OPTIONAL, If you don\'t give this permission, it\'s no problem. You can still use this application.</string>
+    <string name="Permission_OVERLAY">When you remotely lock your device, this application can show a message on the lockscreen for whoever finds your phone.\n\nIf you don\'t give this permission, this functionality will not be activated.</string>
+    <string name="Permission_POST_NOTIFICATIONS">SecureGuard will occasionally send you notifications, for example to warn you that someone is locating your device.</string>
+    <string name="Introduction_Give_Permission">Give Permission</string>
+    <string name="Introduction_Next">Next</string>
+    <string name="Locked_Lock_Screen">This phone is Protected by SecureGuard!\nMessage from the owner:</string>
+    <string name="Enable">Enable</string>
+    <string name="Enabled">Active</string>
+    <string name="Disabled">Inactive</string>
+    <string name="Delete">Delete</string>
+    <string name="Toast_Duplicate_contact">This contact already exists.</string>
+    <string name="MH_GPS_WILL_FOLLOW">GPS coordinates will be sent soon.</string>
+    <string name="MH_rings">Phone is now ringing</string>
+    <string name="MH_Locked">Your device is now locked</string>
+    <string name="MH_Sentry">Your device is now locked. You will get notified if device usage is detected.</string>
+    <string name="MH_Stats">Network-Stats:\nIP\'s: \n</string>
+    <string name="MH_Networks">\nAvailable Wifi-Networks:\n</string>
+    <string name="MH_Delete">Goodbye...</string>
+    <string name="MH_False_Pin">False Pin!</string>
+    <string name="MH_Syntax">Syntax:</string>
+    <string name="MH_Title_Help">SecureGuard Commands:</string>
+    <string name="MH_Help_where">" locate - sends the current location of the phone"</string>
+    <string name="MH_Help_ring">" ring - lets the phone ring"</string>
+    <string name="MH_Help_Lock">" lock - locks the phone"</string>
+    <string name="MH_Help_Sentry">" sentry - locks the phone, and detects phone usage"</string>
+    <string name="MH_Help_Stats">" stats - sends device information"</string>
+    <string name="MH_Help_delete">" delete - resets the phone"</string>
+    <string name="MH_Pin_Accepted">Pin accepted!</string>
+    <string name="R_Stop_ring">Tap to stop ringing</string>
+    <string name="Crashed_Send_log">Send Log</string>
+    <string name="MH_No_GPS">Sorry, location is turned off.</string>
+    <string name="Error">Error</string>
+    <string name="JSON_RL_Error">Error gaining location from OpenCelliD. Please try the following the link. The parameters you want are \"lon\" and \"lat\".</string>
+    <string name="LockScreen_Usage_detectd">SecureGuard: Usage detected. Someone might have used your phone.</string>
+    <string name="LockScreen_Backbutton_pressed">SecureGuard: Usage detected. Someone might have used your phone.</string>
+    <string name="Toast_Empty_FMDCommand">Empty Command not allowed\n Returning to default.[/sg]</string>
+    <string name="FMDConfig_Alert_Pin">PIN</string>
+    <string name="Log_Alert_LogData">LogData</string>
+    <string name="NOT_AVAILABLE">Not Available</string>
+    <string name="Available">Available</string>
+    <string name="registered">Listening</string>
+    <string name="not_registered">Not listening</string>
+    <string name="MH_LAST_KNOWN_LOCATION">Last known location</string>
+    <string name="MH_LAST_KNOWN_LOCATION_NOT_AVAILABLE">Last location is not available.</string>
+    <string name="Alert_First_time_fmdserver">Here you can configure the application to communicate with SecureGuard server. If you want to configure a different server than default, you can do so by changing the URL. If you press "register" you can register the application to the server. Afterwards you can enable the server functionality. If you do so, your phone will send you location data to the specified server. You can check your phone\'s location by entering the ID and the password on the page.</string>
+    <string name="MH_Help_Expert_GPS">" GPS (on/off) - turns the GPS on or off."</string>
+    <string name="MH_NO_SECURE_SETTINGS">Sorry the application is not allowed to do so.</string>
+    <string name="MH_Help_expert">" expert - help page for expert commands."</string>
+    <string name="Permission_Notification">If you want SecureGuard to handle messages from other applications such as Telegram, Whatsapp, etc., you can give FMD access to notifications.</string>
+    <string name="MH_Help_Expert_Sound">" sound (on/off) - turns the sound on or off."</string>
+    <string name="not_possible">This action was not possible.</string>
+    <string name="MH_Help_Expert_Camera">" camera (front/back) - takes a picture and sends it to SecureGuard server."</string>
+    <string name="Permission_Camera">If you want to remotely receive pictures from your phone, the camera permission is needed.</string>
+    <string name="MH_CAM_CAPTURE">"The device will soon send a picture to SecureGuard server. You can view it here soon: "</string>
+    <string name="MH_FMDSERVER_NOT_REGISTERED">This device isn\'t registered on a server.</string>
+    <string name="Introduction_Shizuku">Give via Shizuku</string>
+    <string name="Introduction_Root">Give via Root</string>
+    <string name="RootAccessDenied">Root access denied</string>
+
+</resources>

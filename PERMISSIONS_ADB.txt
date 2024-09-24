@@ -1,0 +1,2 @@
+adb shell appops set de.nulide.findmydevice.dev WRITE_SETTINGS allow
+adb shell pm grant de.nulide.findmydevice.dev android.permission.WRITE_SECURE_SETTINGS

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.settings.OpenCellIdActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_normal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/OpenCellId_OpenCellId"
+                android:textColor="@color/colorAccent"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small"
+                android:text="@string/OpenCellId_API_Key_Description" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editTextOpenCellIDAPIKey"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_small"
+                    android:layout_weight="0.8"
+                    android:text="" />
+
+                <Button
+                    android:id="@+id/buttonPaste"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/paste" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small"
+                android:text="@string/OpenCellId_help" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small"
+                android:text="@string/OpenCellId_privacy" />
+
+            <Button
+                android:id="@+id/buttonOpenOpenCellIdWebsite"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small"
+                android:text="@string/OpenCellId_open_website" />
+
+            <Button
+                android:id="@+id/buttonTestOpenCellId"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:text="@string/OpenCellId_test_opencellid" />
+
+            <TextView
+                android:id="@+id/textViewTestOpenCellIdResponse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:textIsSelectable="true"
+                tools:text="Response" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
