@@ -2,12 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-
     <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.READ_SMS" />
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
-
 
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
@@ -61,54 +59,54 @@
         tools:replace="android:allowBackup">
 
         <activity
-            android:name=".ui.settings.AddAccountActivity"
+            android:name="com.nud.secureguardtech.ui.settings.AddAccountActivity"
             android:exported="false"
             android:label="@string/Settings_FMDServer_AddAccount" />
         <activity
-            android:name=".ui.DummyCameraxActivity"
+            android:name="com.nud.secureguardtech.ui.DummyCameraxActivity"
             android:exported="false"
             android:showOnLockScreen="true"
             android:showWhenLocked="true"
             android:theme="@style/Theme.AppCompat.Translucent"
             android:turnScreenOn="true" />
         <activity
-            android:name=".ui.settings.FMDServerActivity"
+            android:name="com.nud.secureguardtech.ui.settings.FMDServerActivity"
             android:label="@string/Settings_FMDServer" />
         <activity
-            android:name=".ui.settings.OpenCellIdActivity"
+            android:name="com.nud.secureguardtech.ui.settings.OpenCellIdActivity"
             android:label="@string/Settings_OpenCellId" />
         <activity
-            android:name=".ui.settings.FMDConfigActivity"
+            android:name="com.nud.secureguardtech.ui.settings.FMDConfigActivity"
             android:label="@string/Settings_FMDConfig" />
         <activity
             android:name="com.mikepenz.aboutlibraries.ui.LibsActivity"
             android:theme="@style/CustomAboutLibrariesStyle" />
         <activity
-            android:name=".ui.settings.WhiteListActivity"
+            android:name="com.nud.secureguardtech.ui.settings.WhiteListActivity"
             android:label="@string/Settings_WhiteList" />
         <activity
-            android:name=".ui.settings.SettingsActivity"
+            android:name="com.nud.secureguardtech.ui.settings.SettingsActivity"
             android:label="@string/Settings_Settings" />
         <activity
-            android:name=".ui.CrashedActivity"
+            android:name="com.nud.secureguardtech.ui.CrashedActivity"
             android:process=":bug_report" />
         <activity
-            android:name=".ui.LogActivity"
+            android:name="com.nud.secureguardtech.ui.LogActivity"
             android:label="LOG" />
         <activity
-            android:name=".ui.RingerActivity"
+            android:name="com.nud.secureguardtech.ui.RingerActivity"
             android:screenOrientation="sensorPortrait"
             android:showOnLockScreen="true"
             android:showWhenLocked="true"
             android:turnScreenOn="true" />
-        <activity android:name=".ui.IntroductionActivity" />
-        <activity android:name=".ui.onboarding.UpdateboardingModernCryptoActivity" />
+        <activity android:name="com.nud.secureguardtech.ui.IntroductionActivity" />
+        <activity android:name="com.nud.secureguardtech.ui.onboarding.UpdateboardingModernCryptoActivity" />
         <activity
-            android:name=".ui.LockScreenMessage"
+            android:name="com.nud.secureguardtech.ui.LockScreenMessage"
             android:screenOrientation="sensorPortrait"
             android:showOnLockScreen="true" />
         <activity
-            android:name=".ui.MainActivity"
+            android:name="com.nud.secureguardtech.ui.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -118,7 +116,7 @@
         </activity>
 
         <receiver
-            android:name=".receiver.DeviceAdminReceiver"
+            android:name="com.nud.secureguardtech.receiver.DeviceAdminReceiver"
             android:exported="true"
             android:permission="android.permission.BIND_DEVICE_ADMIN">
             <meta-data
@@ -130,7 +128,7 @@
             </intent-filter>
         </receiver>
         <receiver
-            android:name=".receiver.BootReceiver"
+            android:name="com.nud.secureguardtech.receiver.BootReceiver"
             android:directBootAware="true"
             android:enabled="true"
             android:exported="true">
@@ -140,7 +138,7 @@
         </receiver>
 
         <receiver
-            android:name=".receiver.SMSReceiver"
+            android:name="com.nud.secureguardtech.receiver.SMSReceiver"
             android:directBootAware="true"
             android:enabled="true"
             android:exported="true"
@@ -150,7 +148,7 @@
             </intent-filter>
         </receiver>
         <receiver
-            android:name=".receiver.AppUpdatedReceiver"
+            android:name="com.nud.secureguardtech.receiver.AppUpdatedReceiver"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
@@ -158,30 +156,30 @@
         </receiver>
 
         <service
-            android:name=".services.FMDServerLocationUploadService"
+            android:name="com.nud.secureguardtech.services.FMDServerLocationUploadService"
             android:exported="true"
             android:permission="android.permission.BIND_JOB_SERVICE" />
         <service
-            android:name=".services.FMDServerCommandDownloadService"
+            android:name="com.nud.secureguardtech.services.FMDServerCommandDownloadService"
             android:exported="true"
             android:permission="android.permission.BIND_JOB_SERVICE" />
         <service
-            android:name=".services.TempContactExpiredService"
+            android:name="com.nud.secureguardtech.services.TempContactExpiredService"
             android:enabled="true"
             android:exported="true"
             android:permission="android.permission.BIND_JOB_SERVICE" />
         <service
-            android:name=".services.GPSTimeOutService"
+            android:name="com.nud.secureguardtech.services.GPSTimeOutService"
             android:enabled="true"
             android:exported="true"
             android:permission="android.permission.BIND_JOB_SERVICE" />
         <service
-            android:name=".services.FMDSMSService"
+            android:name="com.nud.secureguardtech.services.FMDSMSService"
             android:enabled="true"
             android:exported="true"
             android:permission="android.permission.BIND_JOB_SERVICE" />
         <service
-            android:name=".services.ThirdPartyAccessService"
+            android:name="com.nud.secureguardtech.services.ThirdPartyAccessService"
             android:enabled="true"
             android:exported="true"
             android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
@@ -191,7 +189,7 @@
         </service>
 
         <receiver
-            android:name=".receiver.PushReceiver"
+            android:name="com.nud.secureguardtech.receiver.PushReceiver"
             android:enabled="true"
             android:exported="true">
             <intent-filter>

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="@dimen/margin_normal"
-    tools:context=".ui.settings.AddAccountActivity">
+    tools:context="com.nud.secureguardtech.ui.settings.AddAccountActivity">
 
     <LinearLayout
         android:layout_width="match_parent"

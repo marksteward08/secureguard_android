@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ui.settings.WhiteListActivity">
+    tools:context="com.nud.secureguardtech.ui.settings.WhiteListActivity">
 
     <LinearLayout
         android:layout_width="match_parent"

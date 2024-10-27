@@ -21,6 +21,7 @@
     <string name="Activate_Server">Fetch Server</string>
     <string name="Trusted_Number">Trusted Number</string>
     <string name="Active_hint">If the login and signup button is disabled, it means the web panel is inactive. If so, just tap the \"Fetch Server\" button</string>
+    <string name="Trusted_Number_Description">Secureguard will send alerts to this number in case the simcard has changed.\n\n<b>You will not be needing this setting if you use E-SIM technology</b></string>
 
     <!-- MainActivity -->
     <string name="Granted">Granted: </string>
@@ -41,7 +42,7 @@
     <string name="Settings_Settings">Settings</string>
     <string name="Settings_FMDConfig">SecureGuard-Config</string>
     <string name="Settings_FMDServer" translatable="false">SecureGuard Server</string>
-    <string name="Settings_WhiteList">Trusted Contacts</string>
+    <string name="Settings_WhiteList">SMS Whitelist</string>
     <string name="Settings_OpenCellId">OpenCelliD</string>
     <string name="Settings_Permissions">Review Permissions</string>
     <string name="Settings_Import">Import Settings</string>
@@ -56,6 +57,7 @@
     <string name="pin">Enter your PIN</string>
     <string name="pin_repeat">Repeat PIN</string>
     <string name="Settings_FMDCommand_Description">The command used to communicate with the SecureGuard application.</string>
+    <string name="Settings_Trusted_Number_Description">Enter your recovery number to receive a notification if your SIM card changes.</string>
     <string name="Settings_Ringer_Tone_Description">Select a ringtone that will be played when "/sg ring" is sent.</string>
     <string name="Settings_Select_Ringtone">Select Ringtone</string>
     <string name="Settings_Lockscreenmessage_Description">Lock Screen Message:\nWhen locking the device, this message will appear on the lock screen.</string>
@@ -192,7 +194,7 @@
     <string name="MH_Help_Stats">" stats - sends device information"</string>
     <string name="MH_Help_delete">" delete - resets the phone"</string>
     <string name="MH_Pin_Accepted">Pin accepted!</string>
-    <string name="R_Stop_ring">Tap to stop ringing</string>
+    <string name="R_Stop_ring">STOP</string>
     <string name="Crashed_Send_log">Send Log</string>
     <string name="MH_No_GPS">Sorry, location is turned off.</string>
     <string name="Error">Error</string>

@@ -4,18 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.RingerActivity">
+    tools:context="com.nud.secureguardtech.ui.RingerActivity">
 
     <Button
         android:id="@+id/buttonStopRinging"
         android:layout_width="277dp"
         android:layout_height="297dp"
         android:layout_margin="5mm"
+        android:backgroundTint="@color/colorDisabled"
         android:fontFamily="@font/poppins_semibold"
         android:text="@string/R_Stop_ring"
         android:textAllCaps="false"
-        android:textSize="32dp"
-        app:cornerRadius="@dimen/border_radius"
+        android:textSize="48sp"
+        app:cornerRadius="150dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
