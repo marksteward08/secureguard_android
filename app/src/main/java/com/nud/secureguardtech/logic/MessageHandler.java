@@ -33,10 +33,11 @@ public class MessageHandler {
     public static final String COM_DELETE = "delete";
     public static final String COM_STATS = "stats";
 
-    public static final String COM_EXPERT = "expert";
+    public static final String COM_NEXT = "next";
     public static final String COM_EXPERT_GPS = "gps";
     public static final String COM_EXPERT_SOUND = "sound";
     public static final String COM_EXPERT_CAMERA = "camera";
+    public static final String COM_HELP = "help";
 
     public static final String COM_OK = "ok";
 
@@ -186,7 +187,7 @@ public class MessageHandler {
                     }
                 }
 
-            } else if (msg.startsWith(COM_EXPERT)) {
+            } else if (msg.startsWith(COM_NEXT)) {
                 executedCommand = COM_DELETE;
                 replyBuilder.append((String) ch.getSettings().get(Settings.SET_FMD_COMMAND)).append(context.getString(R.string.MH_Help_Expert_GPS)).append("\n");
                 replyBuilder.append((String) ch.getSettings().get(Settings.SET_FMD_COMMAND)).append(context.getString(R.string.MH_Help_Expert_Sound)).append("\n");
@@ -232,13 +233,13 @@ public class MessageHandler {
                             dummyCameraActivity.putExtra(DummyCameraxActivity.EXTRA_CAMERA, DummyCameraxActivity.CAMERA_BACK);
                         }
                         context.startActivity(dummyCameraActivity);
-                        replyBuilder.append(context.getString(R.string.MH_CAM_CAPTURE)).append((String) ch.getSettings().get(Settings.SET_FMDSERVER_URL));
+                        replyBuilder.append(context.getString(R.string.MH_CAM_CAPTURE));
                     }else{
                         replyBuilder.append(context.getString(R.string.MH_FMDSERVER_NOT_REGISTERED));
 
                     }
                 }
-            }else if (msg.startsWith("help")){
+            }else if (msg.startsWith(COM_HELP)){
                 replyBuilder.append(context.getString(R.string.MH_Title_Help)).append("\n");
                 if (Permission.GPS) {
                     replyBuilder.append((String) ch.getSettings().get(Settings.SET_FMD_COMMAND)).append(context.getString(R.string.MH_Help_where)).append("\n");
@@ -248,7 +249,7 @@ public class MessageHandler {
                     replyBuilder.append((String) ch.getSettings().get(Settings.SET_FMD_COMMAND)).append(context.getString(R.string.MH_Help_Lock)).append("\n");
                     replyBuilder.append((String) ch.getSettings().get(Settings.SET_FMD_COMMAND)).append(context.getString(R.string.MH_Help_Sentry)).append("\n");
                 }
-                replyBuilder.append((String) ch.getSettings().get(Settings.SET_FMD_COMMAND)).append(context.getString(R.string.MH_Help_Stats));
+//                replyBuilder.append((String) ch.getSettings().get(Settings.SET_FMD_COMMAND)).append(context.getString(R.string.MH_Help_Stats));
                 if ((Boolean) ch.getSettings().get(Settings.SET_WIPE_ENABLED)) {
                     replyBuilder.append("\n").append((String) ch.getSettings().get(Settings.SET_FMD_COMMAND)).append(context.getString(R.string.MH_Help_delete));
                 }
