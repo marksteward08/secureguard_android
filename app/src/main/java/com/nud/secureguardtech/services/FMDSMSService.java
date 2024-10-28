@@ -101,6 +101,8 @@ public class FMDSMSService extends JobService {
                 Notifications.notify(this, "SECUREGUARD ALERT!", "This device is being monitored by: " + receiver, Notifications.CHANNEL_PIN);
                 config.set(ConfigSMSRec.CONF_TEMP_WHITELISTED_CONTACT, receiver);
                 config.set(ConfigSMSRec.CONF_TEMP_WHITELISTED_CONTACT_ACTIVE_SINCE, time);
+
+
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                     TempContactExpiredService.scheduleJob(this, ch.getSender());
                 }

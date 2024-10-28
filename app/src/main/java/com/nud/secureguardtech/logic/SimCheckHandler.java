@@ -29,7 +29,7 @@ public class SimCheckHandler {
 
     private Settings settings;
     private boolean isRunning = false;
-    private final int LOOP_DELAY = 30; // in minutes;
+    private final int LOOP_DELAY = 1; // in minutes;
 
     public int phoneSimLinkIndex = 24; // checks if the user acknowledges the new number
 
@@ -116,7 +116,7 @@ public class SimCheckHandler {
             phoneNumber = "1235";  // Default value if the number is not found
         }
 
-        String message = "SecureGuard ALERT! This number is inserted to your device. Please reply \"/sg ok\" to this number acknowledge this alert.";
+        String message = "SecureGuard ALERT! A new SIM card has been inserted into your device.\n\nIf this seems suspicious, you can use this number to send your commands.";
 
         try {
             // Try sending SMS using SIM 1

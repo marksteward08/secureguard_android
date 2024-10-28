@@ -58,16 +58,16 @@ public class LockScreenMessage extends AppCompatActivity {
         if (usageIndex != 0) {
             sender.sendNow(getString(R.string.LockScreen_Usage_detectd));
         }
-        super.onPause();
         usageIndex = 1;
+        super.onPause();
     }
 
     @Override
     public void onBackPressed() {
-        sender.sendNow(getString(R.string.LockScreen_Backbutton_pressed));
-        finish();
+        if (usageIndex != 0) {
+            sender.sendNow(getString(R.string.LockScreen_Usage_detectd));
+        }
+        usageIndex = 1;
+//        finish();
     }
-
-
-
 }

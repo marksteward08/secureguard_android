@@ -134,7 +134,6 @@ public class MessageHandler {
             } else if (msg.startsWith(COM_SENTRY) && Permission.DEVICE_ADMIN) {
                 executedCommand = COM_SENTRY;
                 DevicePolicyManager devicePolicyManager = (DevicePolicyManager) context.getSystemService(Context.DEVICE_POLICY_SERVICE);
-                devicePolicyManager.lockNow();
                 Intent lockScreenMessage = new Intent(context, LockScreenMessage.class);
                 lockScreenMessage.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 lockScreenMessage.putExtra(LockScreenMessage.SENDER, ch.getSender().getDestination());
@@ -146,6 +145,7 @@ public class MessageHandler {
                 context.startActivity(lockScreenMessage);
                 replyBuilder.append(context.getString(R.string.MH_Sentry));
 
+                devicePolicyManager.lockNow();
             //STATS
 
             } else if (msg.startsWith(COM_OK)) {
