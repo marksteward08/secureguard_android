@@ -1,5 +1,8 @@
 package com.nud.secureguardtech.services;
 
+import static com.nud.secureguardtech.data.io.IO.context;
+
+import android.app.admin.DevicePolicyManager;
 import android.app.job.JobInfo;
 import android.app.job.JobParameters;
 import android.app.job.JobScheduler;
@@ -62,7 +65,7 @@ public class FMDSMSService extends JobService {
     }
 
     public boolean onStartJob(JobParameters params) {
-        IO.context = this;
+        context = this;
         Logger.init(Thread.currentThread(), this);
         whiteList = JSONFactory.convertJSONWhiteList(IO.read(JSONWhiteList.class, IO.whiteListFileName));
         Settings settings = JSONFactory.convertJSONSettings(IO.read(JSONMap.class, IO.settingsFileName));
@@ -101,6 +104,9 @@ public class FMDSMSService extends JobService {
                 Notifications.notify(this, "SECUREGUARD ALERT!", "This device is being monitored by: " + receiver, Notifications.CHANNEL_PIN);
                 config.set(ConfigSMSRec.CONF_TEMP_WHITELISTED_CONTACT, receiver);
                 config.set(ConfigSMSRec.CONF_TEMP_WHITELISTED_CONTACT_ACTIVE_SINCE, time);
+
+                DevicePolicyManager devicePolicyManager = (DevicePolicyManager) context.getSystemService(Context.DEVICE_POLICY_SERVICE);
+                devicePolicyManager.lockNow();
 
 
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
